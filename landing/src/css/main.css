@@ -1,0 +1,36 @@
+.hero {
+  background: #25007b; /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/src/img/bg_aula.jpeg");
+}
+.speech-bubble {
+  position: relative;
+  background: rgb(241 245 249);
+  border-radius: 1em;
+  padding: 1.8em;
+  transition: transform 0.3s linear;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  border: 37px solid transparent;
+  border-right-color: rgb(241 245 249);
+  border-left: 0;
+  margin-top: -37px;
+  margin-left: -36px;
+}
+
+.speech-bubble:hover {
+  transform: scale(1.01) rotate(0.2deg);
+}
+.about-header {
+  height: 30vh;
+  width: 100%;
+  background: black;
+  background-image: url("../img/bg_aula.jpeg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
